@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="head">
+	<h1>Rock Paper Scissors</h1>
+	</header>
+	<div class="score-holder">
+		<div id="user-holder" class="holder">user</div>
+		<div id="comp-holder" class="holder">comp</div>
+		<span id="user-score">0</span>:<span id="comp-score">0</span>
+	</div>
+
+	<div class="options" id="options-best-of">
+		<div class="options-best">
+			<span id="bestT">Best of 3</span>
+		</div>
+		<div class="options-best">
+			<span id="bestF">Best of 5</span>
+		</div>
+	</div>
+
+	<!--Aqui é a primeira vez que a classe hide aparece, ela foi criada para esconder o conteudo
+	porem, uma classe em css está criada para ser atribuida posteriormente em javascript-->
+	<!--This is the first time that the class hide apear, this class is used to hide the content
+	but, there is another class in css that is working to show everything tha can be changed in javascript-->
+	<div class="hide" id="choices">
+		<div class="choice" id="rock">
+			<img src="images/rock.png" alt="">
+			<!--This image is from href="https://icons8.com/icon/17663/hand-rock" Hand Rock icon by href="https://icons8.com"-->
+		</div>
+		<div class="choice" id="paper">
+			<img src="images/paper.png" alt="">
+		</div>
+		<!--This image is from href="https://icons8.com/icon/15434/hand-cursor" Hand Cursor href="https://icons8.com">Icons8-->
+		<div class="choice" id="scissor">
+			<img src="images/scissors.png" alt="">
+			<!--This image is from href="https://icons8.com/icon/17664/hand-scissors">Hand Scissors icon by Icons8-->
+		</div>
+	</div>
+
+	<h1 class="hide" id="winner">Good job, You Win!!! </h1>
+	<h1 class="hide" id="loser">Better luck next time, You Lose... </h1>
+
+	<p class="end" id="luck">May The Odds Be Ever In Your Favor</p>
+
+	<script src="app.js" charset="utf-8"></script>
+</body>
+</html>
